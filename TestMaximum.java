@@ -13,7 +13,7 @@ public class TestMaximum {
 		System.out.println("The Largest Number is: "+largest);
 	}
 	/* Function maximum
-	 * This function is used to find the largest number of double. data type */
+	 * This function is used to find the largest number of float data type */
 	public static void maximum(Float[] inputArray)
 	{
 		float largest=0;
@@ -23,10 +23,22 @@ public class TestMaximum {
 		}
 		System.out.println("The Largest Number is: "+largest);
 	}
+	/* Function maximum
+	 * This function is used to find the maximum Strings */
+	public static void maximum(String[] inputArray)
+	{
+		String largest=" ";
+		for(String element : inputArray) {
+			if((element.compareTo(largest))>0)
+					largest=element;
+		}
+		System.out.println("The Largest Number is: "+largest);
+	}
+	
 	
 	// Main Function 
 	public static void main(String[] args) {
-		Float[] floatArray = {158.5f,550.5f,550.51f};
-		maximum(floatArray);
+		String[] stringArray = {"Apple","Peach","Banana"};
+		maximum(stringArray);
 	}
 }
