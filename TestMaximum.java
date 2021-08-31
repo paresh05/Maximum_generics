@@ -25,8 +25,8 @@ public class TestMaximum<E extends Comparable<E>> {
 	
 	// Main Function 
 	public static void main(String[] args) {
-		String[] stringArray = {"Apple","Peach","Banana"};
-		Integer[] intArray = {778,52,45};
+		String[] stringArray = {"Apple","Peach","Banana","Orange"};
+		Integer[] intArray = {778,52,45,587,1008,998,1126};
 		Float[] floatArray= {52.5f,53.2f,56.4f};
 		TestMaximum obj = new TestMaximum(stringArray);
 		obj.maximum();
